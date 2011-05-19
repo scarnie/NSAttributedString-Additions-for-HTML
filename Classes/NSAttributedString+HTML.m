@@ -33,6 +33,7 @@ NSString *NSTextSizeMultiplierDocumentOption = @"NSTextSizeMultiplierDocumentOpt
 // custom options
 NSString *DTMaxImageSize = @"DTMaxImageSize";
 NSString *DTDefaultFontFamily = @"DTDefaultFontFamily";
+NSString *DTDefaultFontName = @"DTDefaultFontName";
 NSString *DTDefaultTextColor = @"DTDefaultTextColor";
 NSString *DTDefaultLinkColor = @"DTDefaultLinkColor";
 NSString *DTDefaultLinkDecoration = @"DTDefaultLinkDecoration";
@@ -115,6 +116,11 @@ NSString *DTDefaultLinkDecoration = @"DTDefaultLinkDecoration";
     else
     {
         defaultFontDescriptor.fontFamily = @"Times New Roman";
+    }
+    
+    NSString *defaultFontName = [options objectForKey:DTDefaultFontName];
+    if (defaultFontName) {
+        defaultFontDescriptor.fontName = defaultFontName;
     }
     
     id defaultLinkColor = [options objectForKey:DTDefaultLinkColor];

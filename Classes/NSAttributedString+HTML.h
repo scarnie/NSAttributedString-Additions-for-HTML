@@ -14,6 +14,7 @@ extern NSString *NSTextSizeMultiplierDocumentOption;
 
 extern NSString *DTMaxImageSize;
 extern NSString *DTDefaultFontFamily;
+extern NSString *DTDefaultFontName;
 extern NSString *DTDefaultTextColor;
 extern NSString *DTDefaultLinkColor;
 extern NSString *DTDefaultLinkDecoration;
